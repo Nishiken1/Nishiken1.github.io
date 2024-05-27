@@ -3,18 +3,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #939dac;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    color: #333;
+    color: #574d3f;
 }
 
 header {
     background: #4CAF50;
-    color: #fff;
+    color: #939dac;
     padding: 2em 0;
     text-align: center;
     width: 100%;
@@ -24,7 +24,7 @@ header {
 }
 
 header a {
-    color: #fff;
+    color: #939dac;
     text-decoration: none;
     font-weight: bold;
     margin-top: 1em;
@@ -46,7 +46,7 @@ main {
 }
 
 .card {
-    background: #fff;
+    background: #939dac;
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,12 +60,12 @@ main {
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #574d3f;
     margin-bottom: 0.5em;
 }
 
 p, ul, li, a {
-    color: #555; /* Secondary text color */
+    color: #574d3f; /* Secondary text color */
     margin-bottom: 1em;
 }
 
@@ -89,7 +89,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     background: #4CAF50;
-    color: #fff;
+    color:#939dac;
     width: 100%;
     margin-top: 2em;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
