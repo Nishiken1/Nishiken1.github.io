@@ -93,4 +93,13 @@ footer {
     width: 100%;
     margin-top: 2em;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.version {
+    font-size: 0.8em;
+    color: #ddd;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
 }
