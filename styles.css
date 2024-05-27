@@ -23,13 +23,20 @@ header {
     position: relative;
 }
 
-header a {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
     color: #154078;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1em;
-    display: inline-block;
-    transition: color 0.2s;
 }
 
 header a:hover {
@@ -46,13 +53,12 @@ main {
 }
 
 .card {
-    background: #a48749;
+    background: #d4c5a1;
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    color: #154078;
 }
 
 .card:hover {
