@@ -20,6 +20,7 @@ header {
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
+    position: relative;
 }
 
 header a {
@@ -28,38 +29,49 @@ header a {
     font-weight: bold;
     margin-top: 1em;
     display: inline-block;
+    transition: color 0.2s;
+}
+
+header a:hover {
+    color: #ffeb3b;
 }
 
 main {
     width: 100%;
     max-width: 1000px;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .card {
     background: #fff;
-    margin-bottom: 2em;
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h3 {
     color: #333;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 p, ul, li, a {
     color: #555; /* Secondary text color */
+    margin-bottom: 1em;
 }
 
 ul {
     padding-left: 1.5em;
+    margin-bottom: 1em;
 }
 
 a {
