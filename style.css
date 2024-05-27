@@ -1,44 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     color: #333;
 }
 
 header {
-    background: #333;
+    background: #4CAF50;
     color: #fff;
-    padding: 1em 0;
+    padding: 2em 0;
     text-align: center;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
 }
 
 main {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1em;
+    width: 100%;
+    max-width: 1000px;
+    padding: 2em;
+}
+
+.card {
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333; /* Main text color */
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 h1, h2, h3 {
     color: #333;
+    margin-bottom: 1em;
 }
 
 p, ul, li, a {
-    color: #666; /* Secondary text color */
-}
-
-h1 {
-    margin-bottom: 0.5em;
+    color: #555; /* Secondary text color */
 }
 
 ul {
@@ -46,18 +55,22 @@ ul {
 }
 
 a {
-    color: #007bff;
+    color: #4CAF50;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover {
+    color: #388E3C;
     text-decoration: underline;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #333;
+    background: #4CAF50;
     color: #fff;
     width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
