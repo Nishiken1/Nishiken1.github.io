@@ -9,12 +9,12 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    color: #000;
+    color: #1d1d1f; /* Appleのスタイルに合わせたテキストカラー */
 }
 
 header {
-    background: #4CAF50;
-    color: #000;
+    background: #fff; /* Appleのクリーンな白背景 */
+    color: #1d1d1f; /* テキスト色 */
     padding: 2em 0;
     text-align: center;
     width: 100%;
@@ -23,24 +23,40 @@ header {
     position: relative;
 }
 
+header h1 {
+    color: #1d1d1f; /* テキスト色 */
+    font-size: 2.5em; /* Appleの大きな見出しスタイル */
+}
+
+header p {
+    color: #6e6e73; /* サブテキストのカラー */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em; /* Appleのような広いナビゲーションスペース */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 1em;
 }
 
 nav ul li a {
-    color: #000;
+    color: #1d1d1f; /* テキスト色 */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500; /* ナビゲーションリンクのスタイル */
+    padding: 0.5em 1em;
+    transition: color 0.2s, background-color 0.2s;
 }
 
-header a:hover {
-    color: #ffeb3b;
+nav ul li a:hover {
+    color: #0071e3; /* Appleのリンクホバー色 */
+    background-color: #f2f2f2; /* ホバー時の背景色 */
+    border-radius: 8px; /* 角を丸める */
 }
 
 main {
@@ -50,6 +66,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+main h2 {
+    color: #1d1d1f;
+    font-size: 2em; /* セクション見出しのサイズ */
+    border-bottom: 2px solid #d2d2d7; /* Apple風のボーダー */
+    padding-bottom: 0.5em;
 }
 
 .card {
@@ -66,13 +89,20 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: left;
+}
+
 h1, h2, h3 {
-    color: #000;
+    color: #1d1d1f;
     margin-bottom: 0.5em;
 }
 
 p, ul, li, a {
-    color: #000;
+    color: #1d1d1f;
     margin-bottom: 1em;
 }
 
@@ -82,22 +112,22 @@ ul {
 }
 
 a {
-    color: #000;
+    color: #0071e3; /* Appleのリンクカラー */
     text-decoration: none;
     transition: color 0.2s, background-color 0.2s;
 }
 
 a:hover {
-    color: #388E3C;
-    background-color: #e0f7fa;
+    color: #0071e3;
+    background-color: #e5f1fb; /* Appleのホバー背景色 */
     text-decoration: underline;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #4CAF50;
-    color: #000;
+    background: #f5f5f5;
+    color: #6e6e73; /* フッターテキストのカラー */
     width: 100%;
     margin-top: 2em;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -124,7 +154,7 @@ footer {
 
 .version {
     font-size: 0.8em;
-    color: #ddd;
+    color: #a1a1a6; /* バージョン情報のテキストカラー */
     position: absolute;
     bottom: 5px;
     right: 10px;
@@ -166,6 +196,17 @@ footer {
     flex-grow: 1;
 }
 
+#labs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.lab-card {
+    flex: 1;
+    text-align: left; /* テキストを左寄せに */
+}
+
 @media (max-width: 768px) {
     header, footer {
         padding: 1em 0;
@@ -199,5 +240,9 @@ footer {
 
     .timeline-content {
         text-align: center;
+    }
+
+    #labs {
+        flex-direction: column;
     }
 }
