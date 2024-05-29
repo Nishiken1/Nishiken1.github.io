@@ -9,12 +9,12 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    color: #1d1d1f; /* Appleのスタイルに合わせたテキストカラー */
+    color: #1d1d1f;
 }
 
 header {
-    background: #fff; /* Appleのクリーンな白背景 */
-    color: #1d1d1f; /* テキスト色 */
+    background: #fff;
+    color: #1d1d1f;
     padding: 2em 0;
     text-align: center;
     width: 100%;
@@ -24,12 +24,12 @@ header {
 }
 
 header h1 {
-    color: #1d1d1f; /* テキスト色 */
-    font-size: 2.5em; /* Appleの大きな見出しスタイル */
+    color: #1d1d1f;
+    font-size: 2.5em;
 }
 
 header p {
-    color: #6e6e73; /* サブテキストのカラー */
+    color: #6e6e73;
 }
 
 nav ul {
@@ -38,7 +38,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1.5em; /* Appleのような広いナビゲーションスペース */
+    gap: 1.5em;
 }
 
 nav ul li {
@@ -46,17 +46,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1d1d1f; /* テキスト色 */
+    color: #1d1d1f;
     text-decoration: none;
-    font-weight: 500; /* ナビゲーションリンクのスタイル */
+    font-weight: 500;
     padding: 0.5em 1em;
     transition: color 0.2s, background-color 0.2s;
 }
 
 nav ul li a:hover {
-    color: #0071e3; /* Appleのリンクホバー色 */
-    background-color: #f2f2f2; /* ホバー時の背景色 */
-    border-radius: 8px; /* 角を丸める */
+    color: #0071e3;
+    background-color: #f2f2f2;
+    border-radius: 8px;
 }
 
 main {
@@ -70,8 +70,8 @@ main {
 
 main h2 {
     color: #1d1d1f;
-    font-size: 2em; /* セクション見出しのサイズ */
-    border-bottom: 2px solid #d2d2d7; /* Apple風のボーダー */
+    font-size: 2em;
+    border-bottom: 2px solid #d2d2d7;
     padding-bottom: 0.5em;
 }
 
@@ -112,14 +112,14 @@ ul {
 }
 
 a {
-    color: #0071e3; /* Appleのリンクカラー */
+    color: #0071e3;
     text-decoration: none;
     transition: color 0.2s, background-color 0.2s;
 }
 
 a:hover {
     color: #0071e3;
-    background-color: #e5f1fb; /* Appleのホバー背景色 */
+    background-color: #e5f1fb;
     text-decoration: underline;
 }
 
@@ -127,7 +127,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     background: #f5f5f5;
-    color: #6e6e73; /* フッターテキストのカラー */
+    color: #6e6e73;
     width: 100%;
     margin-top: 2em;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -154,7 +154,7 @@ footer {
 
 .version {
     font-size: 0.8em;
-    color: #a1a1a6; /* バージョン情報のテキストカラー */
+    color: #a1a1a6;
     position: absolute;
     bottom: 5px;
     right: 10px;
@@ -204,25 +204,25 @@ footer {
 
 .lab-card {
     flex: 1;
-    text-align: left; /* テキストを左寄せに */
+    text-align: left;
 }
 
 @media (max-width: 768px) {
-    header, footer {
-        padding: 1em 0;
+    body {
+        padding: 0 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
     }
 
     nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
+        flex-direction: column;
+        gap: 0.5em;
     }
 
     main {
-        padding: 1em;
+        padding: 1em 0;
     }
 
     .card {
