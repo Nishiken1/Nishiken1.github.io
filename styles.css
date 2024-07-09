@@ -52,7 +52,7 @@ header {
 main {
     width: 100%;
     max-width: 1200px;
-    padding: 6em 1em 2em;
+    padding: 8em 1em 2em; /* Adjusted padding */
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -62,7 +62,7 @@ main {
 .navbar {
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em; /* Adjusted margin */
 }
 
 .navbar ul {
@@ -70,7 +70,7 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1em;
+    gap: 1em; /* Adjusted gap */
 }
 
 .navbar ul li {
@@ -83,14 +83,6 @@ main {
     padding: 0.5em 1em;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.navbar ul li a img {
-    width: 20px;
-    height: 20px;
 }
 
 .navbar ul li a:hover {
@@ -120,6 +112,10 @@ main {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+    display: none;
 }
 
 h1, h2, h3 {
@@ -232,6 +228,20 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+.more-detail-btn {
+    background-color: #238636;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-detail-btn:hover {
+    background-color: #2EA043;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 0 1em;
@@ -253,7 +263,8 @@ footer {
     }
 
     main {
-        padding: 6em 1em 1em;
+        padding: 8em 1em 1em; /* Adjusted padding */
+        max-width: 100%;
     }
 
     .navbar {
@@ -263,6 +274,7 @@ footer {
     .navbar ul {
         flex-direction: column;
         align-items: center;
+        gap: 0.5em;
     }
 
     .navbar ul li {
