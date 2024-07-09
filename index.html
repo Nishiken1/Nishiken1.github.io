@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEN NISHIDA</title>
+    <title>Ken Nishida's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>KEN NISHIDA</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="achievements.html">Awards</a></li>
-                <li><a href="index_jp.html">日本語</a></li>
-            </ul>
-        </nav>
-        <!-- <p>Personal website of Nishidaken, a graduate student at Hokkaido University</p> -->
+        <button id="language-toggle">日本語</button>
+        <p>Personal website of Ken Nishida, a graduate student at Hokkaido University</p>
     </header>
     <main>
         <section id="basic-info" class="card">
             <h2>Basic Information</h2>
             <p><strong>Name:</strong> Ken Nishida</p>
-            <p><strong>Affiliation:</strong> <a href="https://www.ist.hokudai.ac.jp" target="_blank">Hokkaido University, Graduate School of Information Science and Technology</a></p>
+            <p><strong>Affiliation:</strong> <a href="https://www.ist.hokudai.ac.jp" target="_blank">Graduate School of Information Science and Technology, Hokkaido University</a></p>
             <h3>Education</h3>
             <ul>
-                <li>Middle School: Sansuna Junior High School</li>
                 <li>High School: Toyo High School</li>
-                <li>Undergraduate: Hokkaido University</li>
-                <li>Graduate: Hokkaido University</li>
+                <li>Undergraduate: Faculty of Engineering, Hokkaido University, Department of Information and Electronic Engineering (Graduated 2023)</li>
+                <li>Graduate School: Graduate School of Information Science and Technology, Hokkaido University (Expected Graduation 2025)</li>
             </ul>
-            <h3>Laboratory</h3>
-            <p><strong>Affiliation:</strong> <a href="https://www.ist.hokudai.ac.jp/labs/infolab/" target="_blank">Information Knowledge Network Laboratory</a></p>
-            <h3>Collaborative Research</h3>
-            <p><strong>Partner:</strong> <a href="https://www.kijimura.t.u-tokyo.ac.jp" target="_blank">University of Tokyo, Hayashi Laboratory</a></p>
+            <h3>Laboratories</h3>
+            <p><strong>Affiliation:</strong> <a href="https://www-ikn.ist.hokudai.ac.jp/" target="_blank">Information Knowledge Networks Laboratory</a></p>
+            <p><strong>Collaborative Research:</strong> <a href="https://nlp-hayashi.com/" target="_blank">Hayashi Laboratory, University of Tokyo</a></p>
             <h3>Social Media</h3>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ken-nishida" target="_blank">
@@ -46,29 +37,52 @@
                 </a>
             </div>
         </section>
+        <section id="research" class="card">
+            <h2>Research</h2>
+            <h3>Research Overview: Multi-label Classification</h3>
+            <p>
+                Multi-label classification is a task that classifies data points that may be assigned multiple labels simultaneously. Unlike simple classification problems with a single label, multi-label classification can have multiple labels associated with each data point.
+                For example, in image classification, multi-label classification assigns multiple labels to an image when it represents different objects or attributes simultaneously. For instance, an image of a dog might be labeled with both "dog" and "walking."
+                Multi-label classification is used in various applications. For instance, in text classification, it is used when a document is related to multiple topics. It is also applied in music and video classification to predict labels associated with multiple genres or attributes.
+            </p>
+            <h3>Publications</h3>
+            <ul>
+                <li>Ken Nishida, Kojiro Machi, Kazuma Onishi, Katsuhiko Hayashi, Hidetaka Kamigaito. Multi-label Learning with Random Circular Vectors. arXiv, July 2024
+                    [<a href="https://arxiv.org/abs/2407.05656" target="_blank">Paper</a>]
+                </li>
+                <li>Ken Nishida, Katsuhiko Hayashi, Kojiro Machi, Hidetaka Kamigaito. Multi-label Classification using Circular Vectors. IPSJ 258th NL Research Meeting, December 2023
+                    [<a href="https://drive.google.com/file/d/1dnE1pmZ_bXqjXZvq0upSz0KK8sYwsxRI/view" target="_blank">Paper</a>]
+                    [<a href="https://drive.google.com/file/d/1Rwdo0us4thGiVw_AaC96njqZmVBDsuVE/view" target="_blank">Slide</a>]
+                </li>
+                <li>Ken Nishida, Katsuhiko Hayashi, Hidetaka Kamigaito. Efficient Large-scale Multi-label Classification with Circular Holographic Reduced Representations. 18th NLP Young Researchers Symposium (YANS), August 2023
+                    [<a href="https://drive.google.com/file/d/1rUag9pcpIVrN7PBmi1OKB3zzrAlt1Tx1/view" target="_blank">Poster</a>]
+                </li>
+                <!-- Add more presentations as needed -->
+            </ul>
+        </section>
         <section id="internships" class="card">
             <h2>Internships and Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-img">
-                        <img src="images/sony.jpeg" alt="SONY">
+                        <img src="images/sony.jpeg" alt="Sony">
                     </div>
                     <div class="timeline-content">
-                        <h3>SONY</h3>
+                        <h3>Sony</h3>
                         <p><strong>Position:</strong> Machine Learning Specialist</p>
                         <p><strong>Duration:</strong> 3 weeks, February 2024</p>
-                        <p>Engaged in advanced technology development and application development to enhance the value of products using AI/machine learning for Sony products, various services, and applications.</p>
+                        <p>Worked on advanced technology development and application development utilizing AI/machine learning to enhance the value of Sony products, various services, and applications.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-img">
-                        <img src="images/docomo.jpeg" alt="NTT docomo">
+                        <img src="images/docomo.jpeg" alt="NTT Docomo">
                     </div>
                     <div class="timeline-content">
-                        <h3>NTT docomo</h3>
+                        <h3>NTT Docomo</h3>
                         <p><strong>Position:</strong> Marketing</p>
                         <p><strong>Duration:</strong> 2 weeks, August 2023</p>
-                        <p>Experienced in service growth and expansion of the service "Carbon Neutral Record" aimed at solving social issues through the membership base.</p>
+                        <p>Worked on service growth and expansion for "Cabonew Record," a service that aims to solve social issues through a member base.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -78,31 +92,51 @@
                     <div class="timeline-content">
                         <h3>Archibase</h3>
                         <p><strong>Position:</strong> Engineer</p>
-                        <p><strong>Duration:</strong> 2 months, April to May 2023</p>
-                        <p>[Description]</p>
+                        <p><strong>Duration:</strong> 2 months, April~May 2023</p>
+                        <p>Developed a job support site specializing in construction and equipment engineers.</p>
                     </div>
                 </div>
                 <!-- Add more timeline items as needed -->
             </div>
         </section>
-        <section id="labs">
-            <div class="lab-card card">
-                <a href="https://www-ikn.ist.hokudai.ac.jp/" target="_blank" class="card-link">
-                    <h2>Information Knowledge Network Laboratory</h2>
-                    <p>See more details</p>
-                </a>
+        <section id="achievements" class="card">
+            <h2>Awards</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><a href="https://yans.anlp.jp/entry/yans2023report#%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%91%E3%82%A2%E3%83%B3%E3%83%89%E3%82%AB%E3%83%B3%E3%83%91%E3%83%8B%E3%83%BC%E8%B3%9E" target="_blank">The 18th YANS</a></h3>
+                        <p><strong>Award:</strong> Sponsor Award</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/%E6%8E%88%E8%B3%9E/young#h.madv802r1upv">The 258th NL Research Meeting, IPSJ</a></h3>
+                        <p><strong>Award:</strong> Young Researcher Encouragement Award</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>ACL 2024 Workshop Accepted</h3>
+                        <p><strong>Award:</strong> Paper Acceptance</p>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
             </div>
-            <div class="lab-card card">
-                <a href="https://nlp-hayashi.com/" target="_blank" class="card-link">
-                    <h2>Hayashi Laboratory</h2>
-                    <p>See more details</p>
-                </a>
-            </div>
+        </section>
+        <section id="news" class="card">
+            <h2>News</h2>
+            <p>Stay tuned for the latest updates and announcements.</p>
+            <!-- Add news items as needed -->
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Nishidaken. All rights reserved.</p>
+        <p>&copy; 2024 Ken Nishida. All rights reserved.</p>
         <p class="version">Version 1.0.0</p>
     </footer>
+    <script>
+        document.getElementById('language-toggle').addEventListener('click', function() {
+            window.location.href = 'index_jp.html';
+        });
+    </script>
 </body>
 </html>
